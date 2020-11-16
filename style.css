@@ -38,6 +38,15 @@ body {
    margin-bottom: 20px;
 }
 
+.list-wrapper {
+   position: relative;
+}
+
+#surname-list__header {
+   position: fixed;
+   left: 0;
+   width: calc(100% - 20px);
+}
 
 
 #surname-list__body ,
@@ -47,6 +56,8 @@ body {
    list-style-type: none;
    margin: 0 10px;
 }
+
+
 
 #surname-list__body li,
 #surname-list__header li {
