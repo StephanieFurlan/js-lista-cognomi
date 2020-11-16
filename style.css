@@ -1,0 +1,78 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   height: 100vh;
+}
+
+.container {
+
+
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+   height: 20vh;
+}
+
+#added {
+   background-color: #afeeee;
+   border: 1px solid black;
+}
+#surname {
+   margin: 10px 0;
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: 2px solid #afeeee;
+}
+
+#add-surname {
+   margin: 10px 0;
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: 2px solid black;
+   color: white;
+   background-color: #afeeee;
+}
+
+#add-container {
+   height: 10vh;
+   text-align: center;
+}
+
+.table-wrapper{
+   height: 70vh;
+   width: 90%;
+   margin: 0 auto;
+   overflow-y: scroll;
+   flex-grow: 1;
+   border: 1px solid black;
+}
+
+.table-wrapper th{
+   position: sticky;
+   top: 0;
+   background-color: #afeeee;
+}
+
+/* A bit more styling to make it look better */
+
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th{
+    background: #DDD;
+}
+
+td,th{
+  padding: 10px;
+  text-align: center;
+}
