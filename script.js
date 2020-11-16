@@ -14,6 +14,7 @@ add.addEventListener("click", function() {
       // add surname
       surnameList.push(surname);
       // sort surname list
+
       surnameList.sort(function (a, b) {
           if ( a.toLowerCase() < b.toLowerCase() ) {
               return -1;
@@ -25,6 +26,8 @@ add.addEventListener("click", function() {
       } )
 
       var index = 0;
+      document.getElementById("surnameList").innerHTML = "";
+
       for (var i = 0; i < surnameList.length; i++) {
          var tr = document.createElement('tr');
 
@@ -39,18 +42,11 @@ add.addEventListener("click", function() {
          tr.appendChild(tdIndex);
          tr.appendChild(tdSurname);
 
-
          if (surnameList[i] == surname) {
-            tr.setAttribute("id", "added");
-            document.getElementById("surnameList").appendChild(tr);
             document.getElementById("add-container").innerHTML = "Your surname is at " + (i+1) + " position in the list.";
-         } else {
-            document.getElementById("surnameList").appendChild(tr);
          }
+         document.getElementById("surnameList").appendChild(tr);
       }
-
-
-
 
    }
 })
