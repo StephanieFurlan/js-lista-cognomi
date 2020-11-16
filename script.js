@@ -54,4 +54,7 @@ add.addEventListener("click", function() {
       var i = surnameList.indexOf(surname);
       document.getElementById("add-container").innerHTML = "Your surname is at " + (i+1) + " position in the list.";
    }
+
+   document.getElementById("surname").value = "";
+
 })
