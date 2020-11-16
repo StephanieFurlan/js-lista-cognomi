@@ -8,14 +8,12 @@
 body {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
-   height: 100vh;
 }
 
 .container {
    padding: 20px;
    border-radius: 10px;
    text-align: center;
-   height: 15vh;
 }
 
 
@@ -36,42 +34,27 @@ body {
 }
 
 #add-container {
-   height: 5vh;
    text-align: center;
+   margin-bottom: 20px;
 }
 
-.table-wrapper{
-   height: 80vh;
-   width: 90%;
-   margin: 0 auto;
-   overflow-y: scroll;
-   flex-grow: 1;
+
+
+#surname-list__body ,
+#surname-list__header{
+   display: flex;
+   flex-wrap: wrap;
+   list-style-type: none;
+   margin: 0 10px;
+}
+
+#surname-list__body li,
+#surname-list__header li {
+   flex: 0 0 50%;
    border: 1px solid black;
+   padding: 10px;
 }
 
-.table-wrapper th{
-   position: sticky;
-   top: 0;
+#surname-list__header li {
    background-color: #afeeee;
-}
-
-/* A bit more styling to make it look better */
-
-
-table{
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th{
-    background: #DDD;
-}
-
-td,th{
-  padding: 10px;
-  text-align: center;
-}
-
-tr {
-   border: 1px solid gray;
 }
