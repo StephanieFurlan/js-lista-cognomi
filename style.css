@@ -8,12 +8,14 @@
 body {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
+   height: 100vh;
 }
 
 .container {
    padding: 20px;
    border-radius: 10px;
    text-align: center;
+   height: 20vh;
 }
 
 
@@ -39,22 +41,24 @@ body {
 }
 
 .list-wrapper {
+   height: 80vh;
+   overflow-y: scroll;
    position: relative;
 }
 
+
 #surname-list__header {
    position: fixed;
-   left: 0;
-   width: calc(100% - 20px);
-}
+   width: calc(100% - 15px);
 
+
+}
 
 #surname-list__body ,
 #surname-list__header{
    display: flex;
    flex-wrap: wrap;
    list-style-type: none;
-   margin: 0 10px;
 }
 
 
